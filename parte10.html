@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<style>
+	    #botones {
+	        text-align: center;
+	        margin-top: 30px;
+	    }
+	    
+     a.button1 {
+            display: inline-block;
+            padding: 4px 30px;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 1px solid #B70E21;
+            border-radius: 5px;
+            margin-right: 10px;
+     }
+     
+     a.button2 {
+         display: inline-block;
+         padding: 4px 30px;
+         background-color: #B70E21;
+         color: #FFFFFF;
+         text-decoration: none;
+         border: 1px solid #000000;
+         border-radius: 5px;
+         margin-right: 10px;
+     }
+ </style>
+	
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Video.js</title>
+</head>
+<body>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/video10.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<h2>Configurar IP de los equipos</h2>
+				<p>Una dirección IP (Protocolo de Internet) es una etiqueta numérica única asignada a cada dispositivo conectado a una red de computadoras que utiliza el protocolo IP. Esta dirección se utiliza para identificar y localizar los dispositivos en una red, permitiendo que se comuniquen entre sí y compartan información. Las direcciones IP pueden ser versiones IPv4 (por ejemplo, 192.168.1.1) o IPv6 (por ejemplo, 2001:0db8:85a3:0000:0000:8a2e:0370:7334) y son esenciales para el funcionamiento de Internet y las redes locales.</p>
+				
+				<div id="botones">
+				<a href="parte9.html" class="button1">Anterior</a>
+    <a href="parte11.html" class="button2">Siguiente</a>
+    </div>
+			</article>
+		</div>
+	</main>
+
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+</body>
+</html>

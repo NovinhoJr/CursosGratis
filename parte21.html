@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<style>
+	    #botones {
+	        text-align: center;
+	        margin-top: 30px;
+	    }
+	    
+     a.button1 {
+            display: inline-block;
+            padding: 4px 30px;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 1px solid #B70E21;
+            border-radius: 5px;
+            margin-right: 10px;
+     }
+     
+     a.button2 {
+         display: inline-block;
+         padding: 4px 30px;
+         background-color: #B70E21;
+         color: #FFFFFF;
+         text-decoration: none;
+         border: 1px solid #000000;
+         border-radius: 5px;
+         margin-right: 10px;
+     }
+ </style>
+	
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Video.js</title>
+</head>
+<body>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/video21.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<h2>Copiado de carpetas</h2>
+				<p>En hacking ético, "copiar carpetas" se refiere a recopilar información o datos de un sistema o red con permiso legal para evaluar la seguridad y mejorarla.</p>
+				
+				<div id="botones">
+				<a href="parte20.html" class="button1">Anterior</a>
+    <a href="parte22.html" class="button2">Siguiente</a>
+    </div>
+			</article>
+		</div>
+	</main>
+
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+</body>
+</html>

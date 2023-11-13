@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<style>
+	    #botones {
+	        text-align: center;
+	        margin-top: 30px;
+	    }
+	    
+     a.button1 {
+            display: inline-block;
+            padding: 4px 30px;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 1px solid #B70E21;
+            border-radius: 5px;
+            margin-right: 10px;
+     }
+     
+     a.button2 {
+         display: inline-block;
+         padding: 4px 30px;
+         background-color: #B70E21;
+         color: #FFFFFF;
+         text-decoration: none;
+         border: 1px solid #000000;
+         border-radius: 5px;
+         margin-right: 10px;
+     }
+ </style>
+	
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Video.js</title>
+</head>
+<body>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/video45.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<h2>Enumeración LDAP con Ldapsearch</h2>
+				<p>La "enumeración LDAP" es el proceso de obtener información de un directorio de servicios como Active Directory, que se utiliza comúnmente en entornos de red para almacenar datos de usuarios y recursos. La enumeración LDAP implica buscar y recopilar información sobre usuarios, grupos, permisos y otros detalles del directorio, lo que puede ser útil tanto para administradores de sistemas como para profesionales de seguridad en la evaluación y gestión de la seguridad y la autenticación de la red.</p>
+				
+				<div id="botones">
+				<a href="parte44.html" class="button1">Anterior</a>
+    </div>
+			</article>
+		</div>
+	</main>
+
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+</body>
+</html>
